@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* COLOR PALETTE */
+@theme {
+
+    --color-primary: #454546;
+    --color-secondary: #666666;
+
+    --color-tertiary: #8c8c8c;
+    --color-quaternary: #e00000;
+
+    --color-quinary: #ff0000;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* RESPONSIVE DESIGN */
+@theme {
+
+    /* PHONE */
+    --breakpoint-xs: 18.75rem !important; /* 300px */
+    --breakpoint-2xs: 25.75rem !important; /* 412px */
+
+    /* TABLETS */
+    --breakpoint-sm: 37.5rem !important; /* 600px */
+    --breakpoint-2sm: 51.25rem !important; /* 820px */
+
+    /* LAPTOPS y DESKTOP */
+    --breakpoint-md: 80rem !important; /* 1280px */
+    --breakpoint-2md: 100rem !important; /* 1600px */
+}
