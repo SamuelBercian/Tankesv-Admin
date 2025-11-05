@@ -3,13 +3,13 @@
 /* COLOR PALETTE */
 @theme {
 
-    --color-primary: #454546;
-    --color-secondary: #666666;
+    --color-primary: #222125;
+    --color-secondary: #ced1ff;
 
-    --color-tertiary: #8c8c8c;
-    --color-quaternary: #e00000;
+    --color-tertiary: #eff0ff;
+    --color-quaternary: #0e3af6;
 
-    --color-quinary: #ff0000;
+    --color-quinary: #0a2fcd;
 
     --color-white: #ffffff;
     --color-black: #000000;
@@ -19,14 +19,20 @@
 @theme {
 
     /* PHONE */
-    --breakpoint-xs: 18.75rem !important; /* 300px */
-    --breakpoint-2xs: 25.75rem !important; /* 412px */
+    --breakpoint-xs: 18.75rem !important; /* 300px Vertical */
+    --breakpoint-2xs: 25.75rem !important; /* 412px Vertical */
 
     /* TABLETS */
-    --breakpoint-sm: 37.5rem !important; /* 600px */
-    --breakpoint-2sm: 51.25rem !important; /* 820px */
+    --breakpoint-sm: 37.5rem !important; /* 600px Vertical */ 
+    --breakpoint-2sm: 52.5rem !important; /* 840px Horizontal */
+    --breakpoint-3sm: 64rem !important; /* 1024px Horizontal */
 
     /* LAPTOPS y DESKTOP */
-    --breakpoint-md: 80rem !important; /* 1280px */
-    --breakpoint-2md: 100rem !important; /* 1600px */
+    --breakpoint-md: 80rem !important; /* 1280px Vertical */
+    --breakpoint-2md: 100rem !important; /* 1600px Vertical */
+    --breakpoint-3md: 120rem !important /* 1920px Vertical */
+}
+
+body {
+    @apply bg-primary max-w-[1600px] mx-auto;
 }

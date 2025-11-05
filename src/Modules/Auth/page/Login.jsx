@@ -4,7 +4,7 @@ import LoginForm from "../components/LoginForm";
 const Login = () => {
 
     return (
-        <main className="bg-secondary min-h-screen px-5 py-5 flex justify-center items-center
+        <main className="bg-primary min-h-screen px-5 py-5 flex justify-center items-center
             ">
             <LoginForm />
         </main>
