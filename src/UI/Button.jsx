@@ -20,9 +20,7 @@ export function Button({ label }) {
           3sm:py-2.5 3sm:text-xl
 
           md:py-2.5 md:text-xl
-          2md:py-1.5 2md:text-2xl
-          3md:py-1.5 3md:text-2xl
-          
+          2md:py-2 2md:text-2xl
           
           focus:bg-quinary cursor-pointer">
           {label}

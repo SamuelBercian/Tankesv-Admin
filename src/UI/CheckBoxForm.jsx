@@ -1,4 +1,4 @@
-export function CheckBox(){
+export function CheckBox({}){
     return (
         <label className="w-full mt-2.5 flex items-center align-middle
             xs:mt-2.5

@@ -1,19 +1,19 @@
 import React from "react";
-import InputForm from "../../../UI/InputForm";
 import PForm from "../../../UI/PForm";
-import Button from "../../../UI/Button";
+import InputForm from "../../../UI/InputForm";
 import CheckBox from "../../../UI/CheckBoxForm";
+import Button from "../../../UI/Button";
 import AForm from "../../../UI/AForm";
 
 function UserIcon(){
     return (
-        <img src="../public/images/UserIcon3.png" alt="" />
+        <img src="../public/images/UserAccount.png" alt="" />
     )
 }
 
-const LoginForm = () => {
+const SignUpForm = () => {
 
-    return (
+    return(
         <form className="w-full bg-white
             xs:py-10 xs:m-2.5 xs:rounded-lg
             2xs:py-10 2xs:m-2.5 2xs:rounded-lg
@@ -27,9 +27,9 @@ const LoginForm = () => {
             3md:py-15 3md:mx-130 3md:rounded-lg">
             <section className="w-full flex justify-center items-center flex-col px-10">
 
-                <figure className="p-1
+                <figure className="
                     xs:h-auto xs:w-30
-                    2xs:h-auto 2xs:w-30
+                    2xs:h-auto 2xs:w-35
 
                     sm:h-auto sm:w-30
                     2sm:h-auto 2sm:w-35
@@ -38,20 +38,22 @@ const LoginForm = () => {
                     md:h-auto md:w-30
                     2md:h-auto 2md:w-35
                     3md:h-auto 3md:w-35">
-                    <UserIcon/>
+                    <UserIcon />
                 </figure>
 
-                <PForm label="Log" label2=" In"/>
+                <PForm label="Sign" label2=" Up"/>
+                <InputForm label="" placeholder="Firstname" type="text"/>
+                <InputForm label="" placeholder="Lastname" type="text"/>
                 <InputForm label="" placeholder="Email" type="email"/>
                 <InputForm label="" placeholder="Password" type="password"/>
                 <CheckBox />
 
-                <Button label="Login"/>
+                <Button label="Create Account"/>
 
-                <AForm label="You don't have an Account?" />
+                <AForm label="I have an Account" />
             </section>
         </form>
     );
 };
 
-export default LoginForm;
+export default SignUpForm;
